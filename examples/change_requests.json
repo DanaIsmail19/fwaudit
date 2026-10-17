@@ -1,0 +1,11 @@
+{
+  "requests": [
+    {"id": "CHG-3001", "src": "10.10.5.20", "dst": "172.16.10.10", "proto": "tcp", "port": 443,
+     "ticket": "CHG-3001", "justification": "Web portal access for finance"},
+    {"id": "CHG-3002", "src": "10.10.5.20", "dst": "172.16.20.5", "proto": "tcp", "port": 3306,
+     "ticket": "CHG-3002", "justification": "Reporting app DB access"},
+    {"id": "CHG-3003", "src": "0.0.0.0/0", "dst": "172.16.20.5", "proto": "tcp", "port": 1433,
+     "ticket": "CHG-3003", "justification": "Vendor support"},
+    {"id": "CHG-3004", "src": "10.99.0.15", "dst": "172.16.30.7", "proto": "tcp", "port": 8080}
+  ]
+}
