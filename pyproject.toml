@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fwaudit"
+version = "0.1.0"
+description = "Firewall policy review, traffic simulation and change-request validation for FortiGate and iptables"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Dana Ismail"}]
+keywords = ["firewall", "fortigate", "iptables", "network-security", "audit", "change-management"]
+
+[project.scripts]
+fwaudit = "fwaudit.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["fwaudit"]
